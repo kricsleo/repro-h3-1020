@@ -7,14 +7,14 @@ export default defineNuxtConfig({
         // All routes should be ISR
         '/**': {
             isr: {
-              allowQuery: ["name", "url"],
+              allowQuery: ["url", "name"],
               passQuery: true,
             },
         }
     },
-    prerender: {
-        autoSubfolderIndex: true,
-        crawlLinks: true
-    }
+    // prerender: {
+    //     autoSubfolderIndex: true,
+    //     crawlLinks: true
+    // }
   },
 })
