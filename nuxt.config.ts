@@ -8,7 +8,7 @@ export default defineNuxtConfig({
         '/**': {
             isr: {
               allowQuery: ["name"],
-              // passQuery: true,
+              passQuery: true,
             },
         }
     },
