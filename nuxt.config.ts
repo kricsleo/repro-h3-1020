@@ -7,7 +7,7 @@ export default defineNuxtConfig({
         // All routes should be ISR
         '/api/**': {
             isr: {
-              // allowQuery: ["name"],
+              allowQuery: ["name"],
               passQuery: true,
             },
         },
