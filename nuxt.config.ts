@@ -10,7 +10,11 @@ export default defineNuxtConfig({
             //   allowQuery: ["name", "url"],
             //   passQuery: true,
             // },
-            isr: 60
+            isr: {
+              expiration: 60,
+              passQuery: true,
+              allowQuery: ['name', 'url'],
+            }
         },
       //   '/api/bar': {
       //     isr: {
