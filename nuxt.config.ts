@@ -12,8 +12,8 @@ export default defineNuxtConfig({
             // },
             isr: {
               expiration: 60,
-              // passQuery: true,
-              allowQuery: ['name', 'url'],
+              passQuery: true,
+              // allowQuery: ['name', 'url'],
             }
         },
       //   '/api/bar': {
