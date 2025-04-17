@@ -5,12 +5,12 @@ export default defineNuxtConfig({
   nitro: {
     routeRules: {
         // All routes should be ISR
-        // '/**': {
-        //     isr: {
-        //       allowQuery: ["name"],
-        //       passQuery: true,
-        //     },
-        // },
+        '/**': {
+            isr: {
+              allowQuery: ["name"],
+              passQuery: true,
+            },
+        },
         '/api/bar': {
           isr: {
             allowQuery: ["name"],
