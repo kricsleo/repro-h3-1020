@@ -6,7 +6,9 @@ export default defineNuxtConfig({
     routeRules: {
         // All routes should be ISR
         '/**': {
-            isr: true
+            isr: {
+              passQuery: true,
+            },
         }
     },
     prerender: {
