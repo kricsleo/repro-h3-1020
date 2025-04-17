@@ -5,9 +5,9 @@ export default defineNuxtConfig({
   nitro: {
     routeRules: {
         // All routes should be ISR
-        '/api/foo/*/test': {
+        '/api/**': {
             isr: {
-              allowQuery: ["name"],
+              allowQuery: ["name", "url"],
               passQuery: true,
             },
         },
